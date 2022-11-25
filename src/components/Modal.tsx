@@ -63,6 +63,17 @@ const Modal = (props: {
           title: name,
         }
       );
+      toast("Created ", {
+        position: "top-right",
+        autoClose: 500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        type: "success",
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
       setDescription("");
       setName("");
       setManaginingDepartment("");
